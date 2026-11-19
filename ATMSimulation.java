@@ -10,7 +10,7 @@ public class ATMSimulation {
         int maxAttempts = 3;
         boolean loggedIn = false;
 
-        // Loop for PIN login (up to 3 attempts)
+        
         while (attempts < maxAttempts) {
             System.out.print("Enter your PIN: ");
             int enteredPin = scanner.nextInt();
@@ -31,11 +31,11 @@ public class ATMSimulation {
             return;
         }
 
-        double balance = 1000.0; // starting balance
+        double balance = 1000.0;
         ArrayList<String> transactions = new ArrayList<>();
         int choice = 0;
 
-        // Main menu loop until user chooses Exit (5)
+        
         while (choice != 5) {
             System.out.println("\n--- ATM Main Menu ---");
             System.out.println("1. Check Balance");
